@@ -14,7 +14,33 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;700;900&family=Playfair+Display:wght@700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=20260706-typography-2" />
+    <style>
+      #hero-title {
+        display: grid;
+        gap: 0.2em;
+        max-width: 9em;
+        margin-bottom: 1.15rem;
+        font-family: "Noto Sans TC", "Inter", sans-serif;
+        font-size: clamp(3rem, 6.8vw, 6.2rem);
+        font-weight: 900;
+        line-height: 1.02;
+        text-wrap: pretty;
+      }
+
+      #hero-title span {
+        display: block;
+        white-space: nowrap;
+      }
+
+      @media (max-width: 620px) {
+        #hero-title {
+          max-width: 8em;
+          font-size: clamp(2.65rem, 12vw, 4rem);
+          line-height: 1.05;
+        }
+      }
+    </style>
   </head>
   <body>
     <canvas id="signal-canvas" aria-hidden="true"></canvas>
@@ -360,6 +386,6 @@
       <span>Software, business systems, community operations</span>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=20260706-typography-2"></script>
   </body>
 </html>
