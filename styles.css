@@ -106,45 +106,62 @@ input {
   display: inline-flex;
   align-items: center;
   gap: 0.8rem;
+  min-width: 13.5rem;
+  max-width: 100%;
+  flex: 0 0 auto;
 }
 
 .brand-mark {
   display: grid;
   place-items: center;
   width: 2.7rem;
+  min-width: 2.7rem;
+  height: 2.7rem;
   aspect-ratio: 1;
   border: 1px solid rgba(217, 170, 85, 0.42);
   border-radius: 50%;
   overflow: hidden;
   background: #050506;
   box-shadow: 0 0 28px rgba(66, 233, 255, 0.12);
+  flex: 0 0 2.7rem;
 }
 
 .brand-mark img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
+}
+
+.brand-copy {
+  display: grid;
+  min-width: 0;
+  gap: 0.12rem;
 }
 
 .brand strong,
 .brand small {
   display: block;
+  white-space: nowrap;
 }
 
 .brand strong {
   font-size: 0.95rem;
+  line-height: 1.05;
 }
 
 .brand small {
-  margin-top: 0.12rem;
   color: var(--muted);
   font-size: 0.68rem;
+  line-height: 1.15;
   text-transform: uppercase;
 }
 
 nav {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
   gap: clamp(1rem, 3vw, 2.2rem);
   color: #d9d1c6;
   font-size: 0.9rem;
@@ -875,7 +892,7 @@ h1 {
 @media (max-width: 900px) {
   .site-header {
     position: sticky;
-    align-items: flex-start;
+    align-items: center;
     gap: 1rem;
   }
 
@@ -924,6 +941,11 @@ h1 {
 @media (max-width: 620px) {
   .site-header {
     flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .brand {
+    min-width: 0;
   }
 
   .brand small {
