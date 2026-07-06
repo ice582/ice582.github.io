@@ -170,7 +170,7 @@ function setupSubscribe() {
 
   form.addEventListener("submit", (event) => {
     event.preventDefault();
-    note.textContent = "收到。下一封午夜商業訊號會抵達你的收件匣。";
+    note.textContent = "收到，我會把這裡當作聯絡入口保留";
     form.reset();
   });
 }
