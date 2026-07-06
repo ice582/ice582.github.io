@@ -677,6 +677,32 @@ h1 {
   font-size: 0.83rem;
 }
 
+.doc-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.doc-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.25rem;
+  padding: 0 0.85rem;
+  border: 1px solid rgba(66, 233, 255, 0.28);
+  border-radius: 999px;
+  color: var(--cyan);
+  background: rgba(66, 233, 255, 0.06);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.doc-links a:hover,
+.doc-links a:focus-visible {
+  border-color: rgba(66, 233, 255, 0.72);
+  background: rgba(66, 233, 255, 0.12);
+}
+
 .paper {
   position: relative;
   margin-top: 1rem;
