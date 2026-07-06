@@ -229,19 +229,12 @@ p {
 }
 
 h1 {
-  display: grid;
-  gap: 0.2em;
-  max-width: 9em;
-  margin-bottom: 1.15rem;
-  font-family: "Noto Sans TC", "Inter", sans-serif;
-  font-size: clamp(3rem, 6.8vw, 6.2rem);
+  max-width: 7em;
+  margin-bottom: 0.85rem;
+  font-family: "Inter", "Noto Sans TC", sans-serif;
+  font-size: clamp(4.2rem, 9vw, 8.4rem);
   font-weight: 900;
-  line-height: 1.02;
-  text-wrap: pretty;
-}
-
-h1 span {
-  display: block;
+  line-height: 0.92;
 }
 
 .hero-copy {
@@ -249,6 +242,15 @@ h1 span {
   color: #d8cfc2;
   font-size: clamp(1.05rem, 2vw, 1.35rem);
   line-height: 1.9;
+}
+
+.hero-subtitle {
+  max-width: 42rem;
+  margin-bottom: 1rem;
+  color: var(--gold);
+  font-size: clamp(1.15rem, 2.2vw, 1.6rem);
+  font-weight: 800;
+  line-height: 1.45;
 }
 
 .hero-actions {
@@ -891,9 +893,8 @@ h1 span {
   }
 
   h1 {
-    max-width: 8em;
-    font-size: clamp(2.65rem, 12vw, 4rem);
-    line-height: 1.05;
+    font-size: clamp(4rem, 19vw, 5.6rem);
+    line-height: 0.95;
   }
 
   .subscribe div {
