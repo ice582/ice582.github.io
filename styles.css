@@ -450,6 +450,7 @@ h1 {
   font-family: "Noto Sans TC", "Inter", sans-serif;
   font-size: 0.72em;
   font-weight: 900;
+  color: var(--text);
 }
 
 .feature-small h3,
