@@ -167,11 +167,16 @@ function setupPointerEffects() {
 function setupSubscribe() {
   const form = document.querySelector(".subscribe");
   const note = document.querySelector(".form-note");
+  const emailInput = form.querySelector("#email");
 
   form.addEventListener("submit", (event) => {
     event.preventDefault();
-    note.textContent = "收到，我會把這裡當作聯絡入口保留";
-    form.reset();
+    const visitorEmail = emailInput.value.trim();
+    const subject = encodeURIComponent("ice582 個人網站聯絡");
+    const body = encodeURIComponent(`你好，我想透過 ice582 個人網站聯絡\n\n我的 Email：${visitorEmail}`);
+
+    window.location.href = `mailto:bing04904@gmail.com?subject=${subject}&body=${body}`;
+    note.textContent = "已開啟信箱，請確認寄出郵件";
   });
 }
 
